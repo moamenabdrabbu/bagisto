@@ -166,3 +166,129 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
         <img src="https://images.opencollective.com/e-ventures1/7d61db2/logo.png" height="75">
     </a>
 </kbd>
+
+# Centurion - Custom E-commerce Platform
+
+> A customized version of [Bagisto](https://github.com/bagisto/bagisto) - Laravel-based e-commerce platform
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Docker Desktop
+- Git
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/bagisto.git centurion
+cd centurion
+
+# Start with Docker
+./vendor/bin/sail up -d
+
+# Setup database
+./vendor/bin/sail artisan migrate --seed
+
+# Access the application
+# Main App: http://localhost
+# Admin Panel: http://localhost/admin
+```
+
+### Default Credentials
+- **Email**: `admin@example.com`
+- **Password**: `admin123`
+
+## 📚 Documentation
+
+- **[Installation Guide](INSTALLATION_GUIDE.md)** - Complete setup instructions
+- **[Quick Reference](QUICK_REFERENCE.md)** - Daily development commands
+- **[Open Source Workflow](OPEN_SOURCE_WORKFLOW.md)** - Git workflow and custom package development
+
+## 🛠 Development
+
+### Start Development Environment
+```bash
+# Start all services
+./vendor/bin/sail up -d
+
+# Run development server
+./vendor/bin/sail npm run dev
+```
+
+### Common Commands
+```bash
+# Database
+./vendor/bin/sail artisan migrate:fresh --seed
+
+# Cache
+./vendor/bin/sail artisan optimize:clear
+
+# Testing
+./vendor/bin/sail test
+```
+
+## 🏗 Architecture
+
+### Custom Packages
+All customizations are developed as packages in `packages/Custom/` to maintain clean separation from the base Bagisto code.
+
+### Package Structure
+```
+packages/Custom/
+├── YourPackage/
+│   ├── src/
+│   │   ├── Config/
+│   │   ├── Database/
+│   │   ├── Http/
+│   │   ├── Models/
+│   │   ├── Providers/
+│   │   └── Resources/
+│   ├── composer.json
+│   └── package.json
+```
+
+## 🔄 Git Workflow
+
+1. **Fork** the original Bagisto repository
+2. **Create** development branch for custom work
+3. **Develop** features in separate branches
+4. **Keep** base code clean for easy upgrades
+5. **Collaborate** through pull requests
+
+## 🌐 Services
+
+- **Application**: http://localhost
+- **Admin Panel**: http://localhost/admin
+- **Email Testing**: http://localhost:8025
+- **Kibana**: http://localhost:5601
+- **MySQL**: localhost:3308
+
+## 📦 Technology Stack
+
+- **Backend**: Laravel 11.x
+- **Frontend**: Vite, Vue.js
+- **Database**: MySQL 8.0
+- **Cache**: Redis
+- **Search**: Elasticsearch
+- **Container**: Docker with Laravel Sail
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is based on [Bagisto](https://github.com/bagisto/bagisto) and is licensed under the MIT License.
+
+## 🆘 Support
+
+- **Documentation**: [Bagisto Docs](https://devdocs.bagisto.com/)
+- **Issues**: [GitHub Issues](https://github.com/bagisto/bagisto/issues)
+- **Community**: [Bagisto Forum](https://forums.bagisto.com/)
+
+---
+
+**Note**: This is a customized version of Bagisto. For the original project, visit [Bagisto GitHub Repository](https://github.com/bagisto/bagisto).
