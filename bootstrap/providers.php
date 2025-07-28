@@ -48,4 +48,5 @@ return [
      * Custom service providers.
      */
     Custom\PaymentGateway\Providers\PaymentGatewayServiceProvider::class,
+    Custom\KitchenManagement\Providers\KitchenManagementServiceProvider::class,
 ];

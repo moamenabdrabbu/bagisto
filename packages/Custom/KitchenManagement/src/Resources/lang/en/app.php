@@ -1,0 +1,46 @@
+<?php
+
+return [
+    'working-hours' => [
+        'title' => 'Kitchen Working Hours',
+        'configure' => 'Configure Working Hours',
+        'day' => 'Day',
+        'working_day' => 'Working Day',
+        'start_time' => 'Start Time',
+        'end_time' => 'End Time',
+        'update' => 'Update Working Hours',
+        'cancel' => 'Cancel',
+        'current_status' => 'Current Kitchen Status',
+        'kitchen_open' => 'Kitchen is Open',
+        'kitchen_closed' => 'Kitchen is Closed',
+        'days' => [
+            'saturday' => 'Saturday',
+            'sunday' => 'Sunday',
+            'monday' => 'Monday',
+            'tuesday' => 'Tuesday',
+            'wednesday' => 'Wednesday',
+            'thursday' => 'Thursday',
+            'friday' => 'Friday',
+        ],
+    ],
+    
+    'dashboard' => [
+        'title' => 'Kitchen Dashboard',
+        'working_hours' => 'Working Hours',
+        'kitchen_open' => 'Kitchen is Open',
+        'kitchen_closed' => 'Kitchen is Closed',
+        'received_in_kitchen' => 'Received in Kitchen',
+        'scheduled_for_next_day' => 'Scheduled for Next Day',
+        'preparing' => 'Preparing',
+        'ready_for_delivery' => 'Ready for Delivery',
+        'on_the_way' => 'On the Way',
+        'no_orders' => 'No orders in this status',
+        'customer' => 'Customer',
+        'total' => 'Total',
+        'items' => 'Items',
+        'start_preparing' => 'Start Preparing',
+        'ready_for_delivery' => 'Ready for Delivery',
+        'assign_delivery' => 'Assign Delivery',
+        'confirm_status_change' => 'Are you sure you want to change the status?',
+    ],
+]; 

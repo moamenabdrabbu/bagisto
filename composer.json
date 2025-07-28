@@ -96,7 +96,8 @@
             "Webkul\\Tax\\": "packages/Webkul/Tax/src",
             "Webkul\\Theme\\": "packages/Webkul/Theme/src",
             "Webkul\\User\\": "packages/Webkul/User/src",
-            "Custom\\PaymentGateway\\": "packages/Custom/PaymentGateway/src/"
+            "Custom\\PaymentGateway\\": "packages/Custom/PaymentGateway/src/",
+            "Custom\\KitchenManagement\\": "packages/Custom/KitchenManagement/src/"
         }
     },
     "autoload-dev": {
